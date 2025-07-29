@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-const FASTAPI_BACKEND_URL = 'http://ml_backend:8000/execute'; // Use service name
+const FASTAPI_BACKEND_URL = process.env.FASTAPI_BACKEND_URL || "http://localhost:8000/execute";
 
 const documents = new Map();
 

@@ -1,0 +1,17 @@
+# Node modules
+node_modules/
+
+# Build outputs (frontend)
+dist/
+build/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment files
+.env
+.env.local
+
+# Docker volumes
+docker-data/
