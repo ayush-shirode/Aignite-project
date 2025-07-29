@@ -15,12 +15,12 @@ app.use(cors());
 
 const path = require('path');
 
-// Serve frontend's dist folder
-app.use(express.static(path.join(__dirname, '../frontend/dist')));
+// // Serve frontend's dist folder
+// app.use(express.static(path.join(__dirname, '../frontend/dist')));
 
-app.use((req, res, next) => {
-  res.sendFile(path.join(__dirname, '../frontend/dist', 'index.html'));
-});
+// app.use((req, res, next) => {
+//   res.sendFile(path.join(__dirname, '../frontend/dist', 'index.html'));
+// });
 
 
 app.get('/', (req, res) => {
